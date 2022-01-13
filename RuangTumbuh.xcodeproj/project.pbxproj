@@ -519,7 +519,7 @@
 		EF7291F327217B0900C53AE8 = {
 			isa = PBXGroup;
 			children = (
-				EF7291FE27217B0900C53AE8 /* MasterRuangTanam */,
+				EF7291FE27217B0900C53AE8 /* RuangTumbuh */,
 				EF7291FD27217B0900C53AE8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -532,7 +532,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EF7291FE27217B0900C53AE8 /* MasterRuangTanam */ = {
+		EF7291FE27217B0900C53AE8 /* RuangTumbuh */ = {
 			isa = PBXGroup;
 			children = (
 				D471DBFD275B2094003C2B1F /* Fonts */,
@@ -549,7 +549,7 @@
 				EF72920A27217B0A00C53AE8 /* LaunchScreen.storyboard */,
 				EF72920D27217B0A00C53AE8 /* Info.plist */,
 			);
-			path = MasterRuangTanam;
+			path = RuangTumbuh;
 			sourceTree = "<group>";
 		};
 		F691C6E327485973001D7D35 /* ChosePlant */ = {
