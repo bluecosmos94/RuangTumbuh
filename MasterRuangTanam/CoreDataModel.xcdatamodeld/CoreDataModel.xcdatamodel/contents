@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19461" systemVersion="21A559" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="GardenEntity" representedClassName="GardenEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="availNum" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="candleLight" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="candleLightNeed" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="humid" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary"/>
+        <attribute name="isChecklistDone" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="kelvin" optional="YES" attributeType="String"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="methode" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="plant" optional="YES" attributeType="String"/>
+        <attribute name="sizeArea" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="temp" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="listTools" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ToolsEntity" inverseName="gardens" inverseEntity="ToolsEntity"/>
+    </entity>
+    <entity name="ToolsEntity" representedClassName="ToolsEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="checklist" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="function" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="num" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="tooltype" optional="YES" attributeType="String"/>
+        <relationship name="gardens" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GardenEntity" inverseName="listTools" inverseEntity="GardenEntity"/>
+    </entity>
+    <elements>
+        <element name="GardenEntity" positionX="-36" positionY="9" width="128" height="239"/>
+        <element name="ToolsEntity" positionX="0" positionY="144" width="128" height="148"/>
+    </elements>
+</model>

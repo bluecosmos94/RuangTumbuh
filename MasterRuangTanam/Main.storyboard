@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro.ttf">
+            <string>SFPro-Heavy</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="onBoarding" id="Y6W-OH-hqX" customClass="OnboardingViewController" customModule="MasterRuangTanam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9br-dM-gyv">
+                                <rect key="frame" x="0.0" y="88" width="414" height="629"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="5dI-6Z-w93"/>
+                                    <constraint firstAttribute="height" constant="629" id="Zjm-f9-WgJ"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="LcR-z9-um3">
+                                    <size key="itemSize" width="414" height="567"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnBoardingCollectionViewCell" id="HZV-78-27o" customClass="OnboardingCollectionViewCell" customModule="MasterRuangTanam" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="31" width="414" height="567"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pYL-HR-VXd">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="567"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manfaatkan lahan yang kamu miliki untuk menjadi kebun yang dapat dikonsumsi. Tak perlu lahan besar untuk memulai. " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Tw-Py-BQi">
+                                                    <rect key="frame" x="20" y="505" width="374" height="103"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="103" id="OI0-UR-noH"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bangun Kebun di Lahanmu" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5F-55-0y7">
+                                                    <rect key="frame" x="8" y="449" width="398" height="90"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="90" id="U8i-88-TbS"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="SFPro-Heavy" family="SF Pro" pointSize="20"/>
+                                                    <color key="textColor" name="primary-color"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenhouse" translatesAutoresizingMaskIntoConstraints="NO" id="pUU-Zv-0vx">
+                                                    <rect key="frame" x="50" y="232" width="315" height="209"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="209" id="0yL-0r-6mJ"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5Tw-Py-BQi" firstAttribute="leading" secondItem="pYL-HR-VXd" secondAttribute="leading" constant="20" id="46h-gq-bKm"/>
+                                                <constraint firstItem="pUU-Zv-0vx" firstAttribute="leading" secondItem="pYL-HR-VXd" secondAttribute="leading" constant="50" id="80e-68-gak"/>
+                                                <constraint firstAttribute="trailing" secondItem="a5F-55-0y7" secondAttribute="trailing" constant="8" id="8hi-dG-0R0"/>
+                                                <constraint firstAttribute="trailing" secondItem="pUU-Zv-0vx" secondAttribute="trailing" constant="49" id="Qcb-E2-xoY"/>
+                                                <constraint firstItem="a5F-55-0y7" firstAttribute="top" secondItem="pUU-Zv-0vx" secondAttribute="bottom" constant="8" id="iCw-4W-yNB"/>
+                                                <constraint firstItem="5Tw-Py-BQi" firstAttribute="top" secondItem="a5F-55-0y7" secondAttribute="bottom" constant="-34" id="lGw-tX-6Rn"/>
+                                                <constraint firstAttribute="trailing" secondItem="5Tw-Py-BQi" secondAttribute="trailing" constant="20" id="u4d-Wk-l0y"/>
+                                                <constraint firstItem="a5F-55-0y7" firstAttribute="leading" secondItem="pYL-HR-VXd" secondAttribute="leading" constant="8" id="uQs-h7-fMT"/>
+                                                <constraint firstItem="pUU-Zv-0vx" firstAttribute="top" secondItem="pYL-HR-VXd" secondAttribute="top" constant="232" id="xHH-IE-FqW"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="414" height="567"/>
+                                        <connections>
+                                            <outlet property="slideDescription" destination="5Tw-Py-BQi" id="KE3-Dq-ebM"/>
+                                            <outlet property="slideImage" destination="pUU-Zv-0vx" id="DYt-Rc-v0o"/>
+                                            <outlet property="slideLabel" destination="a5F-55-0y7" id="5kR-Uy-bIU"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9e-1C-erj">
+                                <rect key="frame" x="31" y="737" width="352" height="50"/>
+                                <color key="backgroundColor" name="primary-color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="BkX-jH-tof"/>
+                                    <constraint firstAttribute="width" constant="352" id="Oku-fx-ZSw"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="OKE"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonNextSlide:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="qRF-vH-PaZ"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="cYi-qm-cht">
+                                <rect key="frame" x="129" y="816" width="156" height="26"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="5i6-PX-W2H"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" systemColor="systemGreenColor"/>
+                            </pageControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cYi-qm-cht" firstAttribute="top" secondItem="z9e-1C-erj" secondAttribute="bottom" constant="29" id="4nu-S0-44P"/>
+                            <constraint firstItem="z9e-1C-erj" firstAttribute="top" secondItem="9br-dM-gyv" secondAttribute="bottom" constant="20" id="6xM-72-tcf"/>
+                            <constraint firstItem="z9e-1C-erj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="31" id="96a-va-Fdq"/>
+                            <constraint firstItem="9br-dM-gyv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="RBG-hP-yhs"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="z9e-1C-erj" secondAttribute="trailing" constant="31" id="bcb-g3-Ty0"/>
+                            <constraint firstItem="9br-dM-gyv" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="fho-6K-QHo"/>
+                            <constraint firstItem="cYi-qm-cht" firstAttribute="centerX" secondItem="z9e-1C-erj" secondAttribute="centerX" id="k8M-s5-b3t"/>
+                            <constraint firstItem="9br-dM-gyv" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="oON-e9-Kx2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZDa-c3-tTx"/>
+                    <connections>
+                        <outlet property="buttonNextPage" destination="z9e-1C-erj" id="2Tv-AW-oO0"/>
+                        <outlet property="collectionView" destination="9br-dM-gyv" id="W5D-V0-qew"/>
+                        <outlet property="pageControl" destination="cYi-qm-cht" id="zjj-HO-ksQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1110.144927536232" y="61.607142857142854"/>
+        </scene>
+        <!--Last Page View Controller-->
+        <scene sceneID="PPz-w9-A6a">
+            <objects>
+                <viewController storyboardIdentifier="LastPageViewController" id="A5T-X4-w41" customClass="LastPageViewController" customModule="MasterRuangTanam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fba-X8-VW4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cAv-SA-ATE">
+                                <rect key="frame" x="0.0" y="88" width="414" height="537"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="kgk-u0-KG3">
+                                    <size key="itemSize" width="413" height="545"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LastPageCollectionViewCell" id="8ij-jY-hEY" customClass="LastPageCollectionViewCell" customModule="MasterRuangTanam" customModuleProvider="target">
+                                        <rect key="frame" x="0.5" y="0.0" width="413" height="545"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="9et-xY-nLB">
+                                            <rect key="frame" x="0.0" y="0.0" width="413" height="545"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uOp-IK-wrZ">
+                                                    <rect key="frame" x="23" y="42" width="367" height="357"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="UQM-XI-p5N">
+                                                            <rect key="frame" x="0.0" y="0.0" width="367" height="65"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="one" translatesAutoresizingMaskIntoConstraints="NO" id="wB8-Me-qs2">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="45" height="65"/>
+                                                                </imageView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="4rd-BL-9go">
+                                                                    <rect key="frame" x="57" y="0.0" width="310" height="65"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tentukan Lokasi Kebun" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efc-8i-X2N">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="178.5" height="31.5"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="31.5" id="MmJ-S5-A1n"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                                            <color key="textColor" name="primary-color"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tentukan lokasi untuk menentukan metode bertanam yang tepat." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRF-tg-ske">
+                                                                            <rect key="frame" x="0.0" y="31.5" width="280" height="33.5"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="65" id="Q9O-Az-fsh"/>
+                                                                        <constraint firstAttribute="width" constant="310" id="UeF-Ia-hHl"/>
+                                                                    </constraints>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="bZP-aV-9iS">
+                                                            <rect key="frame" x="0.0" y="73" width="367" height="65"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="two" translatesAutoresizingMaskIntoConstraints="NO" id="7Ib-lM-4QK">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="45" height="65"/>
+                                                                </imageView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="7dI-42-M5Z">
+                                                                    <rect key="frame" x="57" y="0.0" width="310" height="65"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tentukan Lokasi Kebun" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0n-Y1-OQR">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="178.5" height="31.5"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="31.5" id="xRw-qL-Kee"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                                            <color key="textColor" name="primary-color"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tentukan lokasi untuk menentukan metode bertanam yang tepat." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iW8-Bp-Xhh">
+                                                                            <rect key="frame" x="0.0" y="31.5" width="280" height="33.5"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="65" id="2A9-Jb-xL1"/>
+                                                                        <constraint firstAttribute="width" constant="310" id="iwW-bd-E0o"/>
+                                                                    </constraints>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="8qi-rO-tUa">
+                                                            <rect key="frame" x="0.0" y="146" width="367" height="65"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="three" translatesAutoresizingMaskIntoConstraints="NO" id="nQr-Jx-nda">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="45" height="65"/>
+                                                                </imageView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="5gC-1B-z7O">
+                                                                    <rect key="frame" x="57" y="0.0" width="310" height="65"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tentukan Lokasi Kebun" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0X-rl-Lrc">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="178.5" height="31.5"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="31.5" id="jWp-4U-prn"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                                            <color key="textColor" name="primary-color"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tentukan lokasi untuk menentukan metode bertanam yang tepat." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQJ-Kv-Lfk">
+                                                                            <rect key="frame" x="0.0" y="31.5" width="280" height="33.5"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="65" id="Wsk-tT-7Rs"/>
+                                                                        <constraint firstAttribute="width" constant="310" id="uLL-XJ-hd9"/>
+                                                                    </constraints>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="IuE-h5-rFP">
+                                                            <rect key="frame" x="0.0" y="219" width="367" height="65"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="four" translatesAutoresizingMaskIntoConstraints="NO" id="LsL-cw-bf3">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="45" height="65"/>
+                                                                </imageView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="UKC-tJ-XWn">
+                                                                    <rect key="frame" x="57" y="0.0" width="310" height="65"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tentukan Lokasi Kebun" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOW-Qi-PKk">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="178.5" height="31.5"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="31.5" id="j2T-9i-Icv"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                                            <color key="textColor" name="primary-color"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tentukan lokasi untuk menentukan metode bertanam yang tepat." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCe-6p-Esc">
+                                                                            <rect key="frame" x="0.0" y="31.5" width="280" height="33.5"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="65" id="djM-jx-mnB"/>
+                                                                        <constraint firstAttribute="width" constant="310" id="rI9-v0-4qZ"/>
+                                                                    </constraints>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="6Iw-A8-Loz">
+                                                            <rect key="frame" x="0.0" y="292" width="367" height="65"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="five" translatesAutoresizingMaskIntoConstraints="NO" id="S5w-Im-qlA">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="45" height="65"/>
+                                                                </imageView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="CSY-li-RK1">
+                                                                    <rect key="frame" x="57" y="0.0" width="310" height="65"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tentukan Lokasi Kebun" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJG-Ei-0fr">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="178.5" height="31.5"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="31.5" id="TqT-HP-XZ9"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                                            <color key="textColor" name="primary-color"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tentukan lokasi untuk menentukan metode bertanam yang tepat." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9YZ-sU-ZZ6">
+                                                                            <rect key="frame" x="0.0" y="31.5" width="280" height="33.5"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="65" id="j4D-O5-scm"/>
+                                                                        <constraint firstAttribute="width" constant="310" id="o0B-tu-VV3"/>
+                                                                    </constraints>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDA-N5-b3V">
+                                                    <rect key="frame" x="27" y="411" width="359" height="103"/>
+                                                    <string key="text">Aplikasi ini akan membantu untuk memandu kamu dalam memahami proses persiapan untuk bertanam di ruang yang kamu punya. Bagaimana, sudah siap?</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Untuk Memulai Bertanam" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qyz-uq-MEx">
+                                                    <rect key="frame" x="25" y="8" width="363" height="25.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25.5" id="tt2-a3-XkH"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                                    <color key="textColor" name="primary-color"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="qyz-uq-MEx" firstAttribute="top" secondItem="9et-xY-nLB" secondAttribute="top" constant="8" id="9oz-HN-0Xp"/>
+                                                <constraint firstItem="RDA-N5-b3V" firstAttribute="leading" secondItem="9et-xY-nLB" secondAttribute="leading" constant="27" id="CAf-gp-91i"/>
+                                                <constraint firstItem="qyz-uq-MEx" firstAttribute="leading" secondItem="9et-xY-nLB" secondAttribute="leading" constant="25" id="Jq5-gA-Rag"/>
+                                                <constraint firstItem="RDA-N5-b3V" firstAttribute="top" secondItem="uOp-IK-wrZ" secondAttribute="bottom" constant="12" id="Pyg-um-WWD"/>
+                                                <constraint firstAttribute="bottom" secondItem="RDA-N5-b3V" secondAttribute="bottom" constant="31" id="Wbv-HQ-gnA"/>
+                                                <constraint firstItem="uOp-IK-wrZ" firstAttribute="top" secondItem="qyz-uq-MEx" secondAttribute="bottom" constant="8.5" id="dBl-qs-J6M"/>
+                                                <constraint firstItem="uOp-IK-wrZ" firstAttribute="leading" secondItem="9et-xY-nLB" secondAttribute="leading" constant="23" id="liR-78-ofF"/>
+                                                <constraint firstAttribute="trailing" secondItem="RDA-N5-b3V" secondAttribute="trailing" constant="27" id="rIJ-SB-lf7"/>
+                                                <constraint firstAttribute="trailing" secondItem="uOp-IK-wrZ" secondAttribute="trailing" constant="23" id="sT3-MF-Fbc"/>
+                                                <constraint firstAttribute="trailing" secondItem="qyz-uq-MEx" secondAttribute="trailing" constant="25" id="uFB-gg-smJ"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="413" height="545"/>
+                                        <connections>
+                                            <outlet property="desc" destination="BRF-tg-ske" id="3Wx-eT-T97"/>
+                                            <outlet property="label" destination="efc-8i-X2N" id="9s8-1f-9Tk"/>
+                                            <outlet property="numbering" destination="wB8-Me-qs2" id="iJv-bL-oAv"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDa-i7-uMn">
+                                <rect key="frame" x="31" y="653" width="352" height="50"/>
+                                <color key="backgroundColor" name="primary-color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8KJ-Wq-lrS"/>
+                                    <constraint firstAttribute="width" constant="352" id="TKJ-bI-8fD"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="AYOO MULAI"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="toMostLastPage:" destination="A5T-X4-w41" eventType="touchUpInside" id="qDE-Fs-0BL"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="zzK-la-tQt">
+                                <rect key="frame" x="129" y="752" width="156" height="26"/>
+                                <color key="pageIndicatorTintColor" red="1" green="0.39937481619999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="currentPageIndicatorTintColor" systemColor="systemGreenColor"/>
+                            </pageControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XSP-b7-Gw3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XSP-b7-Gw3" firstAttribute="trailing" secondItem="zzK-la-tQt" secondAttribute="trailing" constant="129" id="42L-uB-ULK"/>
+                            <constraint firstItem="mDa-i7-uMn" firstAttribute="top" secondItem="cAv-SA-ATE" secondAttribute="bottom" constant="28" id="4f5-XQ-xBU"/>
+                            <constraint firstItem="mDa-i7-uMn" firstAttribute="centerX" secondItem="zzK-la-tQt" secondAttribute="centerX" id="A2o-km-ngJ"/>
+                            <constraint firstAttribute="bottom" secondItem="mDa-i7-uMn" secondAttribute="bottom" constant="193" id="JuD-Om-SvF"/>
+                            <constraint firstItem="cAv-SA-ATE" firstAttribute="leading" secondItem="XSP-b7-Gw3" secondAttribute="leading" id="SN0-3L-03i"/>
+                            <constraint firstItem="cAv-SA-ATE" firstAttribute="top" secondItem="XSP-b7-Gw3" secondAttribute="top" constant="44" id="jeL-fq-nuy"/>
+                            <constraint firstItem="cAv-SA-ATE" firstAttribute="trailing" secondItem="XSP-b7-Gw3" secondAttribute="trailing" id="niu-tF-bmu"/>
+                            <constraint firstItem="zzK-la-tQt" firstAttribute="top" secondItem="mDa-i7-uMn" secondAttribute="bottom" constant="49" id="rRt-7m-fr9"/>
+                            <constraint firstItem="zzK-la-tQt" firstAttribute="leading" secondItem="XSP-b7-Gw3" secondAttribute="leading" constant="129" id="u0W-9q-qIq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="cAv-SA-ATE" id="oZ6-5i-CZf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kUB-NU-5gW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1895.6521739130437" y="61.607142857142854"/>
+        </scene>
+        <!--Most Last View Controller-->
+        <scene sceneID="968-ur-Nl4">
+            <objects>
+                <viewController storyboardIdentifier="MostLastViewController" id="9CV-kh-tP6" customClass="MostLastViewController" customModule="MasterRuangTanam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9LY-WX-SAw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ayo Tentukan Lokasi  Kebun" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eav-41-245">
+                                <rect key="frame" x="57" y="404" width="289" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0Vv-ti-vT8"/>
+                        <color key="backgroundColor" name="primary-color"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Lu-II-RYI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2666.666666666667" y="61.607142857142854"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="20n-p8-3tC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nsc-wo-d9c" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3c3-ev-Vqk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="MkQ-bz-9Fl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wRf-QQ-S9Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="200.00000000000003" y="61.607142857142854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="five" width="44" height="44"/>
+        <image name="four" width="44" height="44"/>
+        <image name="greenhouse" width="182" height="167"/>
+        <image name="one" width="44" height="44"/>
+        <image name="three" width="44" height="44"/>
+        <image name="two" width="44" height="44"/>
+        <namedColor name="primary-color">
+            <color red="0.030999999493360519" green="0.6589999794960022" blue="0.54100000858306885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

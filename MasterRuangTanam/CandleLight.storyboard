@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Candle Light View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="candleIntro" id="Y6W-OH-hqX" customClass="CandleLightViewController" customModule="MasterRuangTanam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pemeriksaan Cahaya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMa-5E-rqU">
+                                <rect key="frame" x="20" y="118" width="374" height="37"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="owe-wg-7oz" customClass="GifImageView" customModule="MasterRuangTanam" customModuleProvider="target">
+                                <rect key="frame" x="157" y="175" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="4I0-yp-FGg"/>
+                                    <constraint firstAttribute="width" constant="100" id="eEE-iL-wbX"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="gifName" value="head-lamp"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gX4-gW-jD0">
+                                <rect key="frame" x="40" y="315" width="334" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="270" id="ufh-r5-xob"/>
+                                </constraints>
+                                <string key="text">Pengukuran cahaya dilakukan dengan cara memanfaatkan Ambient Light Sensors (ALS). Angka yang didapatkan akan dikonversi kedalam satuan fc (foot candle) untuk mengetahui apakah cahaya ruangan cukup optimal untuk menumbuhkan tanamanmu.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTU-lM-uLt" customClass="RoundButton" customModule="MasterRuangTanam" customModuleProvider="target">
+                                <rect key="frame" x="20" y="772" width="374" height="50"/>
+                                <color key="backgroundColor" name="myGreen"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="QGW-Pa-GnW"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="PERIKSA CAHAYA">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="checkCandleLight:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="CWZ-pu-jil"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Untuk memperoleh hasil yang akurat, lakukan pengukuran pada tengah hari saat cuaca terik." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEM-cz-qDA">
+                                <rect key="frame" x="40" y="649" width="334" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="4Oa-Ey-th9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="tTU-lM-uLt" secondAttribute="trailing" constant="20" id="2wy-W9-OYY"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="tTU-lM-uLt" secondAttribute="bottom" constant="40" id="BAy-50-2PG"/>
+                            <constraint firstItem="NEM-cz-qDA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="CMQ-K7-MDK"/>
+                            <constraint firstItem="gX4-gW-jD0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="GJO-FS-CJ6"/>
+                            <constraint firstItem="tTU-lM-uLt" firstAttribute="top" secondItem="NEM-cz-qDA" secondAttribute="bottom" constant="40" id="L5J-qF-NXk"/>
+                            <constraint firstItem="gX4-gW-jD0" firstAttribute="top" secondItem="owe-wg-7oz" secondAttribute="bottom" constant="40" id="OmI-GL-oBG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="eMa-5E-rqU" secondAttribute="trailing" constant="20" id="S2n-l6-unl"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="owe-wg-7oz" secondAttribute="trailing" constant="157" id="Srm-SL-ydx"/>
+                            <constraint firstItem="owe-wg-7oz" firstAttribute="top" secondItem="eMa-5E-rqU" secondAttribute="bottom" constant="20" id="c79-cM-ayh"/>
+                            <constraint firstItem="owe-wg-7oz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="157" id="cl4-vo-iTS"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gX4-gW-jD0" secondAttribute="trailing" constant="40" id="d85-0G-ES3"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="NEM-cz-qDA" secondAttribute="trailing" constant="40" id="dhW-dB-QJa"/>
+                            <constraint firstItem="tTU-lM-uLt" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="m03-Ic-h1B"/>
+                            <constraint firstItem="eMa-5E-rqU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="nmr-fL-iKX"/>
+                            <constraint firstItem="eMa-5E-rqU" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="zNN-08-cBW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WOa-mW-tzU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="942.02898550724649" y="67.633928571428569"/>
+        </scene>
+        <!--Check Candle View Controller-->
+        <scene sceneID="cJr-IO-tXh">
+            <objects>
+                <viewController storyboardIdentifier="check" modalPresentationStyle="fullScreen" id="soA-bp-Mno" customClass="CheckCandleViewController" customModule="MasterRuangTanam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f7M-1b-X4J">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DAU-fO-MX3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rTE-Us-0X7" customClass="RoundView" customModule="MasterRuangTanam" customModuleProvider="target">
+                                <rect key="frame" x="20" y="253" width="374" height="400"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sedang mengukur..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XeV-v6-6kd">
+                                        <rect key="frame" x="8" y="292" width="358" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="V6G-H7-JxZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nnq-h2-I2b">
+                                        <rect key="frame" x="50" y="40" width="274" height="247"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <imageReference key="image" image="sun.max" catalog="system" symbolScale="medium"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="small" weight="thin"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="gifName" value="head-lamp"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arahkan ke lokasi kebunmu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5f-Lu-OrQ">
+                                        <rect key="frame" x="10" y="10" width="354" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="tyx-S9-ePX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="M5f-Lu-OrQ" firstAttribute="top" secondItem="rTE-Us-0X7" secondAttribute="top" constant="10" id="6Df-aH-SeK"/>
+                                    <constraint firstItem="XeV-v6-6kd" firstAttribute="top" secondItem="Nnq-h2-I2b" secondAttribute="bottom" constant="5" id="7y6-2f-OaJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="XeV-v6-6kd" secondAttribute="trailing" constant="8" id="Iaz-k7-9Jd"/>
+                                    <constraint firstItem="XeV-v6-6kd" firstAttribute="leading" secondItem="rTE-Us-0X7" secondAttribute="leading" constant="8" id="OWZ-CE-7dk"/>
+                                    <constraint firstItem="Nnq-h2-I2b" firstAttribute="top" secondItem="M5f-Lu-OrQ" secondAttribute="bottom" constant="5" id="ULB-wu-iIP"/>
+                                    <constraint firstAttribute="height" constant="400" id="bc0-oY-Fuc"/>
+                                    <constraint firstItem="Nnq-h2-I2b" firstAttribute="leading" secondItem="rTE-Us-0X7" secondAttribute="leading" constant="50" id="d0n-34-0Ny"/>
+                                    <constraint firstAttribute="trailing" secondItem="M5f-Lu-OrQ" secondAttribute="trailing" constant="10" id="glJ-7l-vnN"/>
+                                    <constraint firstItem="M5f-Lu-OrQ" firstAttribute="leading" secondItem="rTE-Us-0X7" secondAttribute="leading" constant="10" id="hJH-sZ-5m3"/>
+                                    <constraint firstAttribute="bottom" secondItem="XeV-v6-6kd" secondAttribute="bottom" constant="8" id="xae-co-Yx5"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nnq-h2-I2b" secondAttribute="trailing" constant="50" id="yWi-Wh-bQK"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCP-2E-FBg" customClass="RoundButton" customModule="MasterRuangTanam" customModuleProvider="target">
+                                <rect key="frame" x="20" y="777" width="374" height="45"/>
+                                <color key="backgroundColor" red="0.91758078340000004" green="0.205458903" blue="0.1379645515" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="xZp-C2-yzc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Ulangi"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="cancel:" destination="soA-bp-Mno" eventType="touchUpInside" id="2Da-gi-Oxs"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jm-fl-1PU" customClass="RoundButton" customModule="MasterRuangTanam" customModuleProvider="target">
+                                <rect key="frame" x="20" y="712" width="374" height="45"/>
+                                <color key="backgroundColor" red="0.031372549020000001" green="0.6588235294" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="5ZO-nV-71S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="8" maxY="0.0"/>
+                                <state key="normal" title="Simpan">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="finish:" destination="soA-bp-Mno" eventType="touchUpInside" id="9PD-9R-nTs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQb-Pn-04f" customClass="RoundButton" customModule="MasterRuangTanam" customModuleProvider="target">
+                                <rect key="frame" x="20" y="44" width="105" height="52"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.66000000000000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="inm-Td-nzc"/>
+                                    <constraint firstAttribute="width" constant="105" id="rem-Kh-jBw"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title=" Kembali" image="arrow.uturn.backward" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="26"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundImageColor">
+                                        <color key="value" white="0.0" alpha="0.52863545320000005" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="back:" destination="soA-bp-Mno" eventType="touchUpInside" id="uVJ-3h-48N"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aCQ-hX-c9Q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qCP-2E-FBg" firstAttribute="leading" secondItem="aCQ-hX-c9Q" secondAttribute="leading" constant="20" id="0ci-xe-dwg"/>
+                            <constraint firstAttribute="bottom" secondItem="DAU-fO-MX3" secondAttribute="bottom" id="2JJ-z3-60Q"/>
+                            <constraint firstItem="DAU-fO-MX3" firstAttribute="trailing" secondItem="aCQ-hX-c9Q" secondAttribute="trailing" id="3Ou-LP-to4"/>
+                            <constraint firstItem="aCQ-hX-c9Q" firstAttribute="trailing" secondItem="rTE-Us-0X7" secondAttribute="trailing" constant="20" id="3iL-C9-2cW"/>
+                            <constraint firstItem="aCQ-hX-c9Q" firstAttribute="trailing" secondItem="9jm-fl-1PU" secondAttribute="trailing" constant="20" id="Dgc-ye-QaO"/>
+                            <constraint firstItem="qCP-2E-FBg" firstAttribute="top" secondItem="9jm-fl-1PU" secondAttribute="bottom" constant="20" id="TKI-P9-xcX"/>
+                            <constraint firstItem="aQb-Pn-04f" firstAttribute="top" secondItem="aCQ-hX-c9Q" secondAttribute="top" id="Y5d-wI-1Bm"/>
+                            <constraint firstItem="DAU-fO-MX3" firstAttribute="top" secondItem="f7M-1b-X4J" secondAttribute="top" id="ZgS-cJ-bhy"/>
+                            <constraint firstItem="rTE-Us-0X7" firstAttribute="centerY" secondItem="aCQ-hX-c9Q" secondAttribute="centerY" id="axD-Pj-UOu"/>
+                            <constraint firstItem="rTE-Us-0X7" firstAttribute="leading" secondItem="aCQ-hX-c9Q" secondAttribute="leading" constant="20" id="hhy-Kz-RMU"/>
+                            <constraint firstItem="aCQ-hX-c9Q" firstAttribute="trailing" secondItem="qCP-2E-FBg" secondAttribute="trailing" constant="20" id="kft-Xz-dj6"/>
+                            <constraint firstItem="DAU-fO-MX3" firstAttribute="leading" secondItem="aCQ-hX-c9Q" secondAttribute="leading" id="qLX-Lm-zTt"/>
+                            <constraint firstItem="aQb-Pn-04f" firstAttribute="leading" secondItem="aCQ-hX-c9Q" secondAttribute="leading" constant="20" id="rWg-K9-jba"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="qCP-2E-FBg" secondAttribute="bottom" constant="40" id="wN7-pF-Rt2"/>
+                            <constraint firstItem="9jm-fl-1PU" firstAttribute="leading" secondItem="aCQ-hX-c9Q" secondAttribute="leading" constant="20" id="wVS-nn-qxI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="arView" destination="DAU-fO-MX3" id="6fj-U7-EUW"/>
+                        <outlet property="cancelBtn" destination="qCP-2E-FBg" id="PO8-nx-zWv"/>
+                        <outlet property="checkImage" destination="Nnq-h2-I2b" id="sst-EZ-SQG"/>
+                        <outlet property="checkLabel" destination="M5f-Lu-OrQ" id="f7d-zc-2W7"/>
+                        <outlet property="finisheBtn" destination="9jm-fl-1PU" id="5Lt-5a-ICT"/>
+                        <outlet property="resultLabel" destination="XeV-v6-6kd" id="xJl-X2-JZb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QU1-jX-6z1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1686.9565217391305" y="67.633928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DIi-Ub-Ujd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ACf-ZU-JQ9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="apQ-P8-Hs7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="ngG-es-qKv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8wc-Eg-8kC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.884057971014496" y="67.633928571428569"/>
+        </scene>
+        <!--Finished Candle Light View Controller-->
+        <scene sceneID="2Fo-lu-m3b">
+            <objects>
+                <viewController storyboardIdentifier="final" id="GmA-TJ-ymO" customClass="FinishedCandleLightViewController" customModule="MasterRuangTanam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ad7-60-oeU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selanjutnya kamu bisa liat rekomendasi yang dibuat khusus buat kamu sesuai dengan lokasi dan cahaya kebunmu" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBa-bU-T19">
+                                <rect key="frame" x="20" y="494" width="374" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="myDarkGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCo-PD-qbC" customClass="RoundButton" customModule="MasterRuangTanam" customModuleProvider="target">
+                                <rect key="frame" x="20" y="711" width="374" height="60"/>
+                                <color key="backgroundColor" name="myGreen"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Isq-im-99P"/>
+                                    <constraint firstAttribute="width" priority="250" constant="310" id="UUA-VZ-3Hm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Yuk Lihat Tanaman Kamu"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="finished:" destination="GmA-TJ-ymO" eventType="touchUpInside" id="Dt8-NR-hnf"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pengukuran Selesai" translatesAutoresizingMaskIntoConstraints="NO" id="y9B-nx-tKl">
+                                <rect key="frame" x="50" y="194" width="314" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="256" id="4DS-Xx-7c8"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="gifName" value="growing-plant"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cahaya dan Lokasi Beres!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dP-Sy-v4Y">
+                                <rect key="frame" x="20" y="470" width="374" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" name="myGreen"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WDG-D7-2mv"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FBa-bU-T19" firstAttribute="leading" secondItem="WDG-D7-2mv" secondAttribute="leading" constant="20" id="59n-Te-exG"/>
+                            <constraint firstItem="3dP-Sy-v4Y" firstAttribute="leading" secondItem="WDG-D7-2mv" secondAttribute="leading" constant="20" id="5BV-PF-3bv"/>
+                            <constraint firstItem="y9B-nx-tKl" firstAttribute="top" secondItem="WDG-D7-2mv" secondAttribute="top" constant="150" id="5a3-jI-efJ"/>
+                            <constraint firstItem="WDG-D7-2mv" firstAttribute="bottom" secondItem="qCo-PD-qbC" secondAttribute="bottom" constant="91" id="Ie2-7Q-tqp"/>
+                            <constraint firstItem="WDG-D7-2mv" firstAttribute="trailing" secondItem="FBa-bU-T19" secondAttribute="trailing" constant="20" id="M4J-bY-pDM"/>
+                            <constraint firstItem="FBa-bU-T19" firstAttribute="top" secondItem="3dP-Sy-v4Y" secondAttribute="bottom" id="OZ2-uT-pHW"/>
+                            <constraint firstItem="3dP-Sy-v4Y" firstAttribute="top" secondItem="y9B-nx-tKl" secondAttribute="bottom" constant="20" id="Oz6-J7-O3B"/>
+                            <constraint firstItem="y9B-nx-tKl" firstAttribute="leading" secondItem="WDG-D7-2mv" secondAttribute="leading" constant="50" id="Tqf-uO-NdN"/>
+                            <constraint firstItem="WDG-D7-2mv" firstAttribute="trailing" secondItem="qCo-PD-qbC" secondAttribute="trailing" constant="20" id="hpi-6P-t6U"/>
+                            <constraint firstItem="WDG-D7-2mv" firstAttribute="trailing" secondItem="3dP-Sy-v4Y" secondAttribute="trailing" constant="20" id="lKY-bh-dN1"/>
+                            <constraint firstItem="qCo-PD-qbC" firstAttribute="leading" secondItem="WDG-D7-2mv" secondAttribute="leading" constant="20" id="lQq-cj-OOM"/>
+                            <constraint firstItem="WDG-D7-2mv" firstAttribute="trailing" secondItem="y9B-nx-tKl" secondAttribute="trailing" constant="50" id="n5N-PM-EkZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SdG-lS-dpJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2479.7101449275365" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="9jm-fl-1PU">
+            <size key="intrinsicContentSize" width="70" height="36"/>
+        </designable>
+        <designable name="aQb-Pn-04f">
+            <size key="intrinsicContentSize" width="81" height="20"/>
+        </designable>
+        <designable name="qCP-2E-FBg">
+            <size key="intrinsicContentSize" width="59" height="36"/>
+        </designable>
+        <designable name="qCo-PD-qbC">
+            <size key="intrinsicContentSize" width="230" height="36"/>
+        </designable>
+        <designable name="tTU-lM-uLt">
+            <size key="intrinsicContentSize" width="182" height="38"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Pengukuran Selesai" width="520" height="358"/>
+        <image name="arrow.uturn.backward" catalog="system" width="128" height="112"/>
+        <image name="sun.max" catalog="system" width="128" height="124"/>
+        <namedColor name="myDarkGray">
+            <color red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="myGreen">
+            <color red="0.030999999493360519" green="0.6589999794960022" blue="0.54100000858306885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

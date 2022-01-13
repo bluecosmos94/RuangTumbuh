@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--mainFeature-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="measure" title="mainFeature" modalPresentationStyle="fullScreen" id="Y6W-OH-hqX" customClass="ARMeasureViewController" customModule="MasterRuangTanam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HiY-nx-mkT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3T-U4-ZA5" customClass="RoundButton" customModule="MasterRuangTanam" customModuleProvider="target">
+                                <rect key="frame" x="59" y="780" width="52" height="52"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.66000000000000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="2X1-gq-UpM"/>
+                                    <constraint firstAttribute="width" constant="52" id="EK7-yL-DYO"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title=" " image="arrow.uturn.backward" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="26"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundImageColor">
+                                        <color key="value" white="0.0" alpha="0.52863545320471939" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="undoButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Mhd-Cd-vTA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YsO-ip-LjJ" customClass="RoundButton" customModule="MasterRuangTanam" customModuleProvider="target">
+                                <rect key="frame" x="171" y="770" width="72" height="72"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.66000000000000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="jTg-GG-wwX"/>
+                                    <constraint firstAttribute="height" constant="72" id="pMF-lW-MHf"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="plus" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="26" scale="large" weight="medium"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="36"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundImageColor">
+                                        <color key="value" white="0.0" alpha="0.52863545320000005" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="70N-iO-4dr"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YiC-Dr-6i0" customClass="RoundButton" customModule="MasterRuangTanam" customModuleProvider="target">
+                                <rect key="frame" x="20" y="811" width="374" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="TfM-rQ-2Zd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Ulangi">
+                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="cancelAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Y64-e5-Iv7"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18Z-Yc-cwH" customClass="RoundButton" customModule="MasterRuangTanam" customModuleProvider="target">
+                                <rect key="frame" x="20" y="746" width="374" height="45"/>
+                                <color key="backgroundColor" red="0.031372549019607843" green="0.6588235294117647" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="YtU-Zk-V0P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="8" maxY="0.0"/>
+                                <state key="normal" title="Simpan"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="continueAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3B4-Zy-Xhf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4OJ-RQ-usH" customClass="RoundButton" customModule="MasterRuangTanam" customModuleProvider="target">
+                                <rect key="frame" x="16" y="44" width="105" height="52"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.66000000000000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="Yw0-uH-jBD"/>
+                                    <constraint firstAttribute="width" constant="105" id="iaa-qR-PIE"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title=" Kembali" image="arrow.uturn.backward" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="26"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundImageColor">
+                                        <color key="value" white="0.0" alpha="0.52863545320000005" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="T8G-lu-Czp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4OJ-RQ-usH" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="3ET-m8-HSo"/>
+                            <constraint firstItem="4OJ-RQ-usH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="4YA-XM-Fsx"/>
+                            <constraint firstItem="YsO-ip-LjJ" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="6ge-vW-MfG"/>
+                            <constraint firstItem="YsO-ip-LjJ" firstAttribute="leading" secondItem="o3T-U4-ZA5" secondAttribute="trailing" constant="60" id="E03-fD-SQr"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="YiC-Dr-6i0" secondAttribute="trailing" constant="20" id="F9J-i3-yli"/>
+                            <constraint firstItem="YiC-Dr-6i0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Hn9-pN-30b"/>
+                            <constraint firstItem="HiY-nx-mkT" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="J8e-9K-IvJ"/>
+                            <constraint firstAttribute="bottom" secondItem="HiY-nx-mkT" secondAttribute="bottom" id="X0U-zN-2Tv"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="o3T-U4-ZA5" secondAttribute="bottom" constant="30" id="cos-Fa-5pB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="18Z-Yc-cwH" secondAttribute="trailing" constant="20" id="hBJ-Yg-qyo"/>
+                            <constraint firstItem="HiY-nx-mkT" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="hRe-2t-nSt"/>
+                            <constraint firstItem="18Z-Yc-cwH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="ir2-w6-CTG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="YsO-ip-LjJ" secondAttribute="bottom" constant="20" id="kPO-Vs-3Vw"/>
+                            <constraint firstItem="HiY-nx-mkT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="nEC-Th-mKe"/>
+                            <constraint firstAttribute="bottom" secondItem="YiC-Dr-6i0" secondAttribute="bottom" constant="40" id="rAN-ZQ-8kq"/>
+                            <constraint firstItem="YiC-Dr-6i0" firstAttribute="top" secondItem="18Z-Yc-cwH" secondAttribute="bottom" constant="20" id="wBz-U1-rn4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addButtonView" destination="YsO-ip-LjJ" id="Pe8-Pv-ufK"/>
+                        <outlet property="arView" destination="HiY-nx-mkT" id="XwM-f2-GRH"/>
+                        <outlet property="cancelButton" destination="YiC-Dr-6i0" id="Hbz-uA-nDh"/>
+                        <outlet property="continueButton" destination="18Z-Yc-cwH" id="oqQ-9A-QHg"/>
+                        <outlet property="undoButtonView" destination="o3T-U4-ZA5" id="xfr-x4-EtA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111.59420289855073" y="123.88392857142857"/>
+        </scene>
+        <!--Measure Done View Controller-->
+        <scene sceneID="b7q-64-NhY">
+            <objects>
+                <viewController storyboardIdentifier="MeasureDone" id="613-uM-aLW" customClass="MeasureDoneViewController" customModule="MasterRuangTanam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tCI-as-s63">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hore lokasi udah mantep nih!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0N-ZM-0vq">
+                                <rect key="frame" x="20" y="470" width="374" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" name="myGreen"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selanjutnya, yuk cek cahaya." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLe-ML-YbI">
+                                <rect key="frame" x="20" y="494" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="myDarkGray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxx-TF-V17" customClass="RoundButton" customModule="MasterRuangTanam" customModuleProvider="target">
+                                <rect key="frame" x="20" y="711" width="374" height="60"/>
+                                <color key="backgroundColor" name="myGreen"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="250" constant="310" id="fzd-l6-VNn"/>
+                                    <constraint firstAttribute="height" constant="60" id="nT0-44-Wis"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Ayo Ukur Cahaya"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="DoneMeasuring:" destination="613-uM-aLW" eventType="touchUpInside" id="Fuw-Od-cuq"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="measureDone" translatesAutoresizingMaskIntoConstraints="NO" id="dgJ-Iq-1L1">
+                                <rect key="frame" x="50" y="194" width="314" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="256" id="ynA-Rv-1Oi"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="gifName" value="growing-plant"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rmZ-RC-vtU"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rmZ-RC-vtU" firstAttribute="bottom" secondItem="sxx-TF-V17" secondAttribute="bottom" constant="91" id="41a-Gp-EjS"/>
+                            <constraint firstItem="dgJ-Iq-1L1" firstAttribute="leading" secondItem="rmZ-RC-vtU" secondAttribute="leading" constant="50" id="4L0-bA-9sb"/>
+                            <constraint firstItem="sxx-TF-V17" firstAttribute="leading" secondItem="rmZ-RC-vtU" secondAttribute="leading" constant="20" id="Ljk-Em-fIP"/>
+                            <constraint firstItem="rmZ-RC-vtU" firstAttribute="trailing" secondItem="sxx-TF-V17" secondAttribute="trailing" constant="20" id="MIs-Rb-1aq"/>
+                            <constraint firstItem="zLe-ML-YbI" firstAttribute="leading" secondItem="rmZ-RC-vtU" secondAttribute="leading" constant="20" id="T59-bh-Jli"/>
+                            <constraint firstItem="s0N-ZM-0vq" firstAttribute="top" secondItem="dgJ-Iq-1L1" secondAttribute="bottom" constant="20" id="Th9-Eh-h1u"/>
+                            <constraint firstItem="s0N-ZM-0vq" firstAttribute="leading" secondItem="rmZ-RC-vtU" secondAttribute="leading" constant="20" id="Vde-CU-tMI"/>
+                            <constraint firstItem="rmZ-RC-vtU" firstAttribute="trailing" secondItem="s0N-ZM-0vq" secondAttribute="trailing" constant="20" id="Yrd-jb-6yZ"/>
+                            <constraint firstItem="rmZ-RC-vtU" firstAttribute="trailing" secondItem="dgJ-Iq-1L1" secondAttribute="trailing" constant="50" id="ltw-wX-CkK"/>
+                            <constraint firstItem="zLe-ML-YbI" firstAttribute="top" secondItem="s0N-ZM-0vq" secondAttribute="bottom" id="pWb-Eb-CaX"/>
+                            <constraint firstItem="rmZ-RC-vtU" firstAttribute="trailing" secondItem="zLe-ML-YbI" secondAttribute="trailing" constant="20" id="s5E-dm-MSi"/>
+                            <constraint firstItem="dgJ-Iq-1L1" firstAttribute="top" secondItem="rmZ-RC-vtU" secondAttribute="top" constant="150" id="xpO-UY-TIx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gifImage" destination="dgJ-Iq-1L1" id="Hhn-HL-z7g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aqe-za-I3R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1037.68115942029" y="123.88392857142857"/>
+        </scene>
+        <!--Garden Naming View Controller-->
+        <scene sceneID="k0W-7m-e43">
+            <objects>
+                <viewController storyboardIdentifier="NamingGarden" id="c4g-ZU-zFy" customClass="GardenNamingViewController" customModule="MasterRuangTanam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G7r-bh-Ahh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="48S-TM-d1J">
+                                <rect key="frame" x="0.0" y="429" width="414" height="44"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="NLM-1B-Hq3"/>
+                                    <constraint firstAttribute="width" constant="414" id="VIB-0h-Gdl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Berikan Nama untuk Area ini" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kiq-IN-wPs">
+                                <rect key="frame" x="20" y="388" width="374" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="3uy-5n-GrL"/>
+                                    <constraint firstAttribute="height" constant="24" id="6yI-Sw-KcR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" name="myGreen"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fo6-u3-VlL" customClass="RoundButton" customModule="MasterRuangTanam" customModuleProvider="target">
+                                <rect key="frame" x="52" y="502" width="310" height="60"/>
+                                <color key="backgroundColor" name="myGreen"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="5cf-NT-kiY"/>
+                                    <constraint firstAttribute="width" constant="310" id="B3F-ZS-Fyp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="OKE"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="finishedNaming:" destination="c4g-ZU-zFy" eventType="touchUpInside" id="4vm-AX-xGm"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QUs-Dt-FYN" customClass="GifImageView" customModule="MasterRuangTanam" customModuleProvider="target">
+                                <rect key="frame" x="151" y="252" width="112" height="112"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="2zz-Cv-N9e"/>
+                                    <constraint firstAttribute="width" constant="112" id="Bgd-lm-cKa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="gifName" value="quotation-mark"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TMZ-fs-jL9"/>
+                        <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kiq-IN-wPs" firstAttribute="top" secondItem="QUs-Dt-FYN" secondAttribute="bottom" constant="24" id="7l5-y8-beS"/>
+                            <constraint firstItem="QUs-Dt-FYN" firstAttribute="leading" secondItem="TMZ-fs-jL9" secondAttribute="leading" constant="151" id="IHL-Qk-ApH"/>
+                            <constraint firstItem="Fo6-u3-VlL" firstAttribute="top" secondItem="48S-TM-d1J" secondAttribute="bottom" constant="29" id="IYD-nZ-7f0"/>
+                            <constraint firstAttribute="trailing" secondItem="48S-TM-d1J" secondAttribute="trailing" id="J9k-LN-vk0"/>
+                            <constraint firstItem="48S-TM-d1J" firstAttribute="leading" secondItem="G7r-bh-Ahh" secondAttribute="leading" id="PiK-8Z-AER"/>
+                            <constraint firstItem="TMZ-fs-jL9" firstAttribute="trailing" secondItem="Kiq-IN-wPs" secondAttribute="trailing" constant="20" id="PzD-BE-NtD"/>
+                            <constraint firstItem="Fo6-u3-VlL" firstAttribute="leading" secondItem="TMZ-fs-jL9" secondAttribute="leading" constant="52" id="SWq-br-UE4"/>
+                            <constraint firstItem="48S-TM-d1J" firstAttribute="top" secondItem="Kiq-IN-wPs" secondAttribute="bottom" constant="17" id="Zf8-pw-SGN"/>
+                            <constraint firstItem="TMZ-fs-jL9" firstAttribute="trailing" secondItem="Fo6-u3-VlL" secondAttribute="trailing" constant="52" id="akF-AY-S11"/>
+                            <constraint firstItem="TMZ-fs-jL9" firstAttribute="bottom" secondItem="Fo6-u3-VlL" secondAttribute="bottom" constant="300" id="cUV-bo-f8r"/>
+                            <constraint firstItem="TMZ-fs-jL9" firstAttribute="trailing" secondItem="QUs-Dt-FYN" secondAttribute="trailing" constant="151" id="lve-em-8xK"/>
+                            <constraint firstItem="Kiq-IN-wPs" firstAttribute="leading" secondItem="TMZ-fs-jL9" secondAttribute="leading" constant="20" id="nVz-FP-VSA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gardenName" destination="48S-TM-d1J" id="Otj-Ac-PtJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L3V-33-KHX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1857.9710144927537" y="123.88392857142857"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="18Z-Yc-cwH">
+            <size key="intrinsicContentSize" width="70" height="36"/>
+        </designable>
+        <designable name="4OJ-RQ-usH">
+            <size key="intrinsicContentSize" width="81" height="20"/>
+        </designable>
+        <designable name="Fo6-u3-VlL">
+            <size key="intrinsicContentSize" width="39" height="36"/>
+        </designable>
+        <designable name="YiC-Dr-6i0">
+            <size key="intrinsicContentSize" width="51" height="33"/>
+        </designable>
+        <designable name="YsO-ip-LjJ">
+            <size key="intrinsicContentSize" width="35.5" height="33.5"/>
+        </designable>
+        <designable name="o3T-U4-ZA5">
+            <size key="intrinsicContentSize" width="26" height="20"/>
+        </designable>
+        <designable name="sxx-TF-V17">
+            <size key="intrinsicContentSize" width="157" height="36"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="arrow.uturn.backward" catalog="system" width="128" height="112"/>
+        <image name="measureDone" width="780" height="606"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <namedColor name="myDarkGray">
+            <color red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="myGreen">
+            <color red="0.030999999493360519" green="0.6589999794960022" blue="0.54100000858306885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="lastOnboard" reuseIdentifier="lastOnboard" id="gTV-IL-0wX" customClass="LastOnboardCollectionViewCell" customModule="MasterRuangTanam" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="565"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="413" height="565"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzK-zg-8QH">
+                        <rect key="frame" x="0.0" y="0.0" width="413" height="565"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Untuk Memulai Bertanam" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUW-Vd-Z7h">
+                                <rect key="frame" x="25" y="20" width="363" height="25.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" name="primary-color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="BfJ-cY-Um8">
+                                <rect key="frame" x="10" y="65.5" width="393" height="65"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="one" translatesAutoresizingMaskIntoConstraints="NO" id="23c-4j-ubF">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="65"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="tiJ-gC-3wq">
+                                        <rect key="frame" x="56" y="0.0" width="337" height="65"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tentukan Lokasi Kebun" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Hz-Z3-U7U">
+                                                <rect key="frame" x="0.0" y="0.0" width="178.5" height="31.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="31.5" id="MH4-Vb-nLW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <color key="textColor" name="primary-color"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tentukan lokasi untuk menentukan metode bertanam yang tepat." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETX-9a-fzV">
+                                                <rect key="frame" x="0.0" y="31.5" width="280" height="33.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="MTb-YZ-PXu">
+                                <rect key="frame" x="10" y="150.5" width="393" height="48.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="two" translatesAutoresizingMaskIntoConstraints="NO" id="02p-nX-7or">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="48.5"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="AvA-ho-UJo">
+                                        <rect key="frame" x="56" y="0.0" width="337" height="48.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tentukan Metode Tanam" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psT-cr-vcH">
+                                                <rect key="frame" x="0.0" y="0.0" width="189.5" height="31.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="31.5" id="ZNQ-Md-ipA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <color key="textColor" name="primary-color"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pilih metode yang cocok dengan lokasi kebunmu." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ded-rY-g4Z">
+                                                <rect key="frame" x="0.0" y="31.5" width="318" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Dyu-sY-VjS">
+                                <rect key="frame" x="10" y="219" width="393" height="53"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="three" translatesAutoresizingMaskIntoConstraints="NO" id="AJl-MX-lkT">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="53"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="YOJ-4T-USW">
+                                        <rect key="frame" x="56" y="0.0" width="337" height="53"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tentukan Jenis Tanaman" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHb-dO-JQJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="191" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <color key="textColor" name="primary-color"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tentukan jenis tanaman yang sesuai dengan lokasimu." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPS-n4-DbX">
+                                                <rect key="frame" x="0.0" y="19.5" width="236" height="33.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="cOu-GP-1tv">
+                                <rect key="frame" x="10" y="292" width="393" height="70"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="four" translatesAutoresizingMaskIntoConstraints="NO" id="ngH-ZL-YYX">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="70"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Oyj-4D-ljd">
+                                        <rect key="frame" x="56" y="0.0" width="337" height="70"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Periksa Kecukupan Cahaya" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSF-xj-962">
+                                                <rect key="frame" x="0.0" y="0.0" width="209" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <color key="textColor" name="primary-color"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Setelah semua faktor sudah dipertimbangkan, gunakan checklist yang disediakan untuk memulai pengalaman bertanam pertamamu!" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87C-aa-3yA">
+                                                <rect key="frame" x="0.0" y="19.5" width="326" height="50.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="2t9-Jw-2OG">
+                                <rect key="frame" x="10" y="382" width="393" height="82"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="five" translatesAutoresizingMaskIntoConstraints="NO" id="328-0f-llf">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="82"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="a9q-0E-f0D">
+                                        <rect key="frame" x="56" y="0.0" width="337" height="82"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checklist Raport Card" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fo7-ZE-wYI">
+                                                <rect key="frame" x="0.0" y="0.0" width="170.5" height="31.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="31.5" id="FW0-Eh-QDO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <color key="textColor" name="primary-color"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Setelah semua faktor sudah dipertimbangkan, gunakan checklist yang disediakan untuk memulai pengalaman bertanam pertamamu!" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7b-I5-U8s">
+                                                <rect key="frame" x="0.0" y="31.5" width="326" height="50.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZs-EI-ybK">
+                                <rect key="frame" x="30" y="458.5" width="353" height="81.5"/>
+                                <string key="text">Aplikasi ini akan membantu untuk memandu kamu dalam memahami proses persiapan untuk bertanam di ruang yang kamu punya. Bagaimana, sudah siap?</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2t9-Jw-2OG" firstAttribute="top" secondItem="cOu-GP-1tv" secondAttribute="bottom" constant="20" id="1TB-bZ-XYE"/>
+                            <constraint firstAttribute="bottom" secondItem="VZs-EI-ybK" secondAttribute="bottom" constant="25" id="AAt-7B-OmE"/>
+                            <constraint firstItem="rUW-Vd-Z7h" firstAttribute="leading" secondItem="hzK-zg-8QH" secondAttribute="leading" constant="25" id="Ejb-AL-Iym"/>
+                            <constraint firstItem="MTb-YZ-PXu" firstAttribute="top" secondItem="BfJ-cY-Um8" secondAttribute="bottom" constant="20" id="Fnd-uC-HKP"/>
+                            <constraint firstAttribute="trailing" secondItem="MTb-YZ-PXu" secondAttribute="trailing" constant="10" id="HGj-d4-D5X"/>
+                            <constraint firstAttribute="trailing" secondItem="VZs-EI-ybK" secondAttribute="trailing" constant="30" id="HOc-jx-Xya"/>
+                            <constraint firstAttribute="trailing" secondItem="rUW-Vd-Z7h" secondAttribute="trailing" constant="25" id="IZm-sS-MJI"/>
+                            <constraint firstAttribute="trailing" secondItem="2t9-Jw-2OG" secondAttribute="trailing" constant="10" id="KtP-8Z-5XP"/>
+                            <constraint firstItem="Dyu-sY-VjS" firstAttribute="leading" secondItem="hzK-zg-8QH" secondAttribute="leading" constant="10" id="Nxd-is-Ybq"/>
+                            <constraint firstItem="VZs-EI-ybK" firstAttribute="leading" secondItem="hzK-zg-8QH" secondAttribute="leading" constant="30" id="TBD-Y9-WOc"/>
+                            <constraint firstItem="BfJ-cY-Um8" firstAttribute="leading" secondItem="hzK-zg-8QH" secondAttribute="leading" constant="10" id="U9z-7U-14a"/>
+                            <constraint firstItem="MTb-YZ-PXu" firstAttribute="leading" secondItem="hzK-zg-8QH" secondAttribute="leading" constant="10" id="Yag-Ut-VCP"/>
+                            <constraint firstItem="Dyu-sY-VjS" firstAttribute="top" secondItem="MTb-YZ-PXu" secondAttribute="bottom" constant="20" id="bdh-RD-oYP"/>
+                            <constraint firstAttribute="trailing" secondItem="cOu-GP-1tv" secondAttribute="trailing" constant="10" id="boo-0j-TjK"/>
+                            <constraint firstItem="rUW-Vd-Z7h" firstAttribute="top" secondItem="hzK-zg-8QH" secondAttribute="top" constant="20" id="btN-RF-1ox"/>
+                            <constraint firstItem="BfJ-cY-Um8" firstAttribute="top" secondItem="rUW-Vd-Z7h" secondAttribute="bottom" constant="20" id="dHw-MF-psV"/>
+                            <constraint firstItem="2t9-Jw-2OG" firstAttribute="leading" secondItem="hzK-zg-8QH" secondAttribute="leading" constant="10" id="fGv-c0-ngz"/>
+                            <constraint firstAttribute="trailing" secondItem="BfJ-cY-Um8" secondAttribute="trailing" constant="10" id="klX-yJ-EaA"/>
+                            <constraint firstItem="cOu-GP-1tv" firstAttribute="leading" secondItem="hzK-zg-8QH" secondAttribute="leading" constant="10" id="kuy-kR-qd2"/>
+                            <constraint firstAttribute="trailing" secondItem="Dyu-sY-VjS" secondAttribute="trailing" constant="10" id="s2f-Rs-oaO"/>
+                            <constraint firstItem="cOu-GP-1tv" firstAttribute="top" secondItem="Dyu-sY-VjS" secondAttribute="bottom" constant="20" id="uBg-Uu-1sj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="hzK-zg-8QH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="74x-5k-Ysg"/>
+                <constraint firstAttribute="bottom" secondItem="hzK-zg-8QH" secondAttribute="bottom" id="88g-VR-aUh"/>
+                <constraint firstAttribute="trailing" secondItem="hzK-zg-8QH" secondAttribute="trailing" id="QXZ-kY-Z0K"/>
+                <constraint firstItem="hzK-zg-8QH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="p4M-om-KqL"/>
+            </constraints>
+            <size key="customSize" width="413" height="565"/>
+            <point key="canvasLocation" x="136.95652173913044" y="100.11160714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="five" width="44" height="44"/>
+        <image name="four" width="44" height="44"/>
+        <image name="one" width="44" height="44"/>
+        <image name="three" width="44" height="44"/>
+        <image name="two" width="44" height="44"/>
+        <namedColor name="primary-color">
+            <color red="0.030999999493360519" green="0.6589999794960022" blue="0.54100000858306885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

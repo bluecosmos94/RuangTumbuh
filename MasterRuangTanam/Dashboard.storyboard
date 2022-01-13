@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WuK-a9-PwX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--DashboardViewController-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="dashboard" title="DashboardViewController" id="Y6W-OH-hqX" customClass="DashboardViewController" customModule="MasterRuangTanam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Yjc-Ya-zKn">
+                                <rect key="frame" x="0.0" y="166" width="414" height="730"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qa2-yY-gkL">
+                                <rect key="frame" x="20" y="74" width="374" height="72"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AYO BERTANAM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KEJ-yA-yZO">
+                                        <rect key="frame" x="0.0" y="0.0" width="220" height="72"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <color key="textColor" name="myGreen"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JBQ-yM-lZH" customClass="GifImageView" customModule="MasterRuangTanam" customModuleProvider="target">
+                                        <rect key="frame" x="225" y="0.0" width="149" height="72"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="72" id="gvr-hB-ZGi"/>
+                                            <constraint firstAttribute="height" constant="72" id="qyD-17-5Uq"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="gifName" value="potted-flower"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="JBQ-yM-lZH" firstAttribute="top" secondItem="qa2-yY-gkL" secondAttribute="top" id="Lkm-ot-Szq"/>
+                                    <constraint firstAttribute="trailing" secondItem="JBQ-yM-lZH" secondAttribute="trailing" id="Mw8-rt-b0m"/>
+                                    <constraint firstAttribute="height" constant="72" id="iEG-si-0ov"/>
+                                    <constraint firstAttribute="bottom" secondItem="JBQ-yM-lZH" secondAttribute="bottom" id="oEs-HJ-KOX"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4LM-6X-xXA">
+                                <rect key="frame" x="20" y="154" width="374" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="MAM-Vs-3tw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Yjc-Ya-zKn" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="055-mN-M27"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="qa2-yY-gkL" secondAttribute="trailing" constant="20" id="1RH-gg-Jq8"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="4LM-6X-xXA" secondAttribute="trailing" constant="20" id="CfO-4b-ZLX"/>
+                            <constraint firstItem="4LM-6X-xXA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Vnj-S0-DEo"/>
+                            <constraint firstItem="Yjc-Ya-zKn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="a9d-4S-zTv"/>
+                            <constraint firstItem="qa2-yY-gkL" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="acF-rA-qPk"/>
+                            <constraint firstItem="4LM-6X-xXA" firstAttribute="top" secondItem="qa2-yY-gkL" secondAttribute="bottom" constant="8" symbolic="YES" id="cUb-Gc-R6a"/>
+                            <constraint firstItem="Yjc-Ya-zKn" firstAttribute="top" secondItem="qa2-yY-gkL" secondAttribute="bottom" constant="20" id="p7w-Ol-n8M"/>
+                            <constraint firstItem="qa2-yY-gkL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="tH5-ta-0Yr"/>
+                            <constraint firstAttribute="bottom" secondItem="Yjc-Ya-zKn" secondAttribute="bottom" id="xSo-6E-5XV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3Om-dJ-KLK"/>
+                    <connections>
+                        <outlet property="tableView" destination="Yjc-Ya-zKn" id="dJs-J9-GmW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <stackView opaque="NO" contentMode="scaleAspectFill" spacing="35" id="bFt-ZO-DLv">
+                    <rect key="frame" x="0.0" y="0.0" width="310" height="82.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DDh-Af-8Y1">
+                            <rect key="frame" x="0.0" y="0.0" width="80" height="82.5"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checklist-icon" translatesAutoresizingMaskIntoConstraints="NO" id="l63-lN-gzq">
+                                    <rect key="frame" x="0.0" y="0.0" width="80" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="80" id="ANe-b7-PNK"/>
+                                        <constraint firstAttribute="height" constant="44" id="sGR-Rz-omt"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pengukuran Lokasi" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7Z-k4-fAW">
+                                    <rect key="frame" x="0.0" y="49" width="80" height="33.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="qpI-9t-N4P"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="BCX-r9-0gn">
+                            <rect key="frame" x="115" y="0.0" width="80" height="82.5"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="number-2-gray" translatesAutoresizingMaskIntoConstraints="NO" id="PKi-yw-bVX">
+                                    <rect key="frame" x="0.0" y="0.0" width="80" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="9MZ-Dq-BJj"/>
+                                        <constraint firstAttribute="width" constant="80" id="9Mw-Y6-0Wr"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pengukuran Lokasi" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUJ-Ka-5dO">
+                                    <rect key="frame" x="0.0" y="49" width="80" height="33.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="v5J-nu-pHE"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="T5M-SS-k67">
+                            <rect key="frame" x="230" y="0.0" width="80" height="82.5"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="number-3-gray" translatesAutoresizingMaskIntoConstraints="NO" id="Hnp-Qq-iwc">
+                                    <rect key="frame" x="0.0" y="0.0" width="80" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="80" id="7aV-20-yIC"/>
+                                        <constraint firstAttribute="height" constant="44" id="liY-RM-sQ3"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pengukuran Lokasi" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Zx-Vu-b91">
+                                    <rect key="frame" x="0.0" y="49" width="80" height="33.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="zJi-ce-rya"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="xHQ-qE-K8O"/>
+                </stackView>
+            </objects>
+            <point key="canvasLocation" x="1671.0144927536232" y="101.78571428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mkl-tT-EJM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="WuK-a9-PwX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SND-ac-ZVp">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="dzr-ME-cdi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I6g-By-sgU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="760.86956521739137" y="101.78571428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checklist-icon" width="44" height="44"/>
+        <image name="number-2-gray" width="44" height="44"/>
+        <image name="number-3-gray" width="44" height="44"/>
+        <namedColor name="myGreen">
+            <color red="0.031372549019607843" green="0.6588235294117647" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
