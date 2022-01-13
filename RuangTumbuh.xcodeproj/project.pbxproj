@@ -223,7 +223,7 @@
 		EF21C86A275FACF80001488D /* MethodeReferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodeReferenceView.swift; sourceTree = "<group>"; };
 		EF26F457273556C400CF5012 /* VirtualGestureInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualGestureInteraction.swift; sourceTree = "<group>"; };
 		EF68CA3627329E25007351E6 /* ARPlacementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPlacementViewController.swift; sourceTree = "<group>"; };
-		EF7291FC27217B0900C53AE8 /* MasterRuangTanam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterRuangTanam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF7291FC27217B0900C53AE8 /* RuangTumbuh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RuangTumbuh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF7291FF27217B0900C53AE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF72920127217B0900C53AE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EF72920827217B0A00C53AE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -527,7 +527,7 @@
 		EF7291FD27217B0900C53AE8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EF7291FC27217B0900C53AE8 /* MasterRuangTanam.app */,
+				EF7291FC27217B0900C53AE8 /* RuangTumbuh.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -573,9 +573,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EF7291FB27217B0900C53AE8 /* MasterRuangTanam */ = {
+		EF7291FB27217B0900C53AE8 /* RuangTumbuh */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EF72921027217B0A00C53AE8 /* Build configuration list for PBXNativeTarget "MasterRuangTanam" */;
+			buildConfigurationList = EF72921027217B0A00C53AE8 /* Build configuration list for PBXNativeTarget "RuangTumbuh" */;
 			buildPhases = (
 				EF7291F827217B0900C53AE8 /* Sources */,
 				EF7291F927217B0900C53AE8 /* Frameworks */,
@@ -585,12 +585,12 @@
 			);
 			dependencies = (
 			);
-			name = MasterRuangTanam;
+			name = RuangTumbuh;
 			packageProductDependencies = (
 				EFAFD2602733C6C4009EE793 /* FocusEntity */,
 			);
 			productName = MasterRuangTanam;
-			productReference = EF7291FC27217B0900C53AE8 /* MasterRuangTanam.app */;
+			productReference = EF7291FC27217B0900C53AE8 /* RuangTumbuh.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -607,7 +607,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EF7291F727217B0900C53AE8 /* Build configuration list for PBXProject "MasterRuangTanam" */;
+			buildConfigurationList = EF7291F727217B0900C53AE8 /* Build configuration list for PBXProject "RuangTumbuh" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -623,7 +623,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EF7291FB27217B0900C53AE8 /* MasterRuangTanam */,
+				EF7291FB27217B0900C53AE8 /* RuangTumbuh */,
 			);
 		};
 /* End PBXProject section */
@@ -930,7 +930,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EF7291F727217B0900C53AE8 /* Build configuration list for PBXProject "MasterRuangTanam" */ = {
+		EF7291F727217B0900C53AE8 /* Build configuration list for PBXProject "RuangTumbuh" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EF72920E27217B0A00C53AE8 /* Debug */,
@@ -939,7 +939,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EF72921027217B0A00C53AE8 /* Build configuration list for PBXNativeTarget "MasterRuangTanam" */ = {
+		EF72921027217B0A00C53AE8 /* Build configuration list for PBXNativeTarget "RuangTumbuh" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EF72921127217B0A00C53AE8 /* Debug */,
